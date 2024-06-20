@@ -1,11 +1,29 @@
 .App {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 5rem;
-  text-align: match-parent;
-}
+    max-width: 1920px;     
+    margin: 0 auto;    
+    padding: 0.25rem;         
+    text-align: left;      
+    position: relative;
+    font-size: 24px;
+                  
+ }
 
 #output{
   color: Red;
 
+}
+
+button{
+  background-color: #c90439;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left:auto;
 }
