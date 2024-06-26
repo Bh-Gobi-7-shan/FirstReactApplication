@@ -1,7 +1,7 @@
 import './App.css';
 function ButtonEvent() {
     
-    const ButtonClick = () =>{
+    function ButtonClick(){
         console.log("Button Clicked")
         
     }
