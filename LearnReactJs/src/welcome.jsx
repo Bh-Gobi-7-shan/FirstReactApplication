@@ -9,8 +9,14 @@ function welcomePrint(props) {
 
     return(
         <>
-        <h1>Welcome to the <span id='output'>{changeName[output]}</span> From Ours! </h1> 
-        <h3>{text}</h3>
+        <h1>Welcome to the <span id='output'>{changeName[output]}</span> From Ours! </h1>
+        {props.SendName !== undefined && props.SendColor !== undefined ? 
+        <h3>{text}</h3>:
+        null
+        
+        }
+        
+        
         </>
     )
   
