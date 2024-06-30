@@ -1,14 +1,30 @@
-import './App.css';
+import styleSheet from './buttonclick.header.css';
+import { useState } from 'react';  // for state
+
+const myColor = {
+    color: "red"
+}
+const changeColor = {
+    color: "blue"
+}
+
 function ButtonEvent() {
+    const [color, setColor] = useState(myColor)
     
     function ButtonClick(){
-        console.log("Button Clicked")
-        
+        setColor(changeColor);    
     }
+
+   
+   
     
 
     return(
-        <button onClick={ButtonClick}>Click to contiue </button> 
+        <>
+        <button onClick={ButtonClick} className={styleSheet.button}>Click to contiue </button>
+        <h1 style={color}>If you Click me then my color change</h1> 
+        // this is style sheet for specific componant 
+        </>
         
     )
   
